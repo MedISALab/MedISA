@@ -17,22 +17,28 @@ export default function IndvPublications() {
         pub.authors.some(author =>
           author.toLowerCase().includes("angshuman paul")
         )
-      );
+      ); // default filter for Angshuman Paul only
 
   const sorted = [...filtered].sort((a, b) => b.year - a.year);
 
   return (
-    <div style={{ backgroundColor: "#f8f9fa", minHeight: "80vh", padding: "2rem" }}>
-      <Container style={{ fontFamily: "'Poppins', sans-serif", marginTop: "50px"}}>
+    <div
+      style={{ backgroundColor: "#f8f9fa", minHeight: "80vh", padding: "2rem" }}
+    >
+      <Container
+        style={{ fontFamily: "'Poppins', sans-serif", marginTop: "50px" }}
+      >
         <h2
           className="mb-4 text-center"
           style={{ color: "#333", fontWeight: 600, letterSpacing: "0.5px" }}
         >
-          {name ? `${name}'s Publications` : "All Publications"}
+          {name ? `${name}'s Publications` : "Publications"}
         </h2>
 
         {sorted.length === 0 ? (
-          <p style={{ color: "#666", textAlign: "center" }}>No publications found for this author.</p>
+          <p style={{ color: "#666", textAlign: "center" }}>
+            No publications found for this author.
+          </p>
         ) : (
           sorted.map((pub, idx) => (
             <Card key={idx} className="mb-4 shadow-sm p-3">
@@ -44,8 +50,12 @@ export default function IndvPublications() {
                       target="_blank"
                       rel="noreferrer"
                       style={{ textDecoration: "none", color: "#1a73e8" }}
-                      onMouseOver={e => (e.target.style.textDecoration = "underline")}
-                      onMouseOut={e => (e.target.style.textDecoration = "none")}
+                      onMouseOver={(e) =>
+                        (e.target.style.textDecoration = "underline")
+                      }
+                      onMouseOut={(e) =>
+                        (e.target.style.textDecoration = "none")
+                      }
                     >
                       {pub.title}
                     </a>
@@ -59,17 +69,31 @@ export default function IndvPublications() {
                 <Card.Text>
                   <strong>Year:</strong> {pub.year}
                 </Card.Text>
-                {pub.link && (
-                  <Button
-                    variant="primary"
-                    size="sm"
-                    href={pub.link}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    View Publication
-                  </Button>
-                )}
+
+                <div className="d-flex gap-2">
+                  {pub.link && (
+                    <Button
+                      variant="primary"
+                      size="sm"
+                      href={pub.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View Publication
+                    </Button>
+                  )}
+                  {pub.code && (
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      href={pub.code}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View Code
+                    </Button>
+                  )}
+                </div>
               </Card.Body>
             </Card>
           ))

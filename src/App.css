@@ -16,6 +16,7 @@
 }
 
 /************ Default Css ************/
+
 * {
   margin: 0;
   padding: 0;
@@ -76,7 +77,7 @@ p.success {
 p.danger {
 	color: red;
 }
-/************ Navbar Css ************/
+
 /************ Navbar CSS ************/
 nav.navbar {
   padding-right: 5%;
@@ -248,15 +249,6 @@ nav.navbar .navbar-toggler-icon:after {
   }
 
   /* Show all dropdown items under main tab for mobile */
-  nav.navbar .dropdown-menu {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    display: block;
-    box-shadow: none;
-    margin: 0;
-    background-color: #121212e0;
-  }
 
   /* Center dropdown items for mobile */
   nav.navbar .dropdown-menu a.dropdown-item {

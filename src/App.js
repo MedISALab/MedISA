@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer";
 // Import all page components
 import { Banner } from "./components/Banner";
 import { Highlights } from "./components/Highlights";
+import { News } from "./components/News";          // ✅ Import News
 import { Publications } from "./components/Publications";
 import { Contact } from "./components/Contact";
 
@@ -33,6 +34,7 @@ const HomePage = () => {
     <>
       <Banner />
       <Highlights />
+      <News />
       <Publications />
       <Contact />
     </>

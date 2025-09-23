@@ -5,7 +5,15 @@ import { publications } from "../data/publications";
 export const Publications = () => {
   const [visibleCount, setVisibleCount] = useState(10);
 
-  const sortedPubs = publications.sort((a, b) => b.year - a.year);
+  // Filter to include only publications with Angshuman Paul as co-author
+  const filteredPubs = publications.filter(pub =>
+    pub.authors.some(author =>
+      author.toLowerCase().includes("angshuman paul")
+    )
+  );
+
+  // Sort the filtered publications by year (descending)
+  const sortedPubs = filteredPubs.sort((a, b) => b.year - a.year);
 
   const handleViewMore = () => {
     setVisibleCount(sortedPubs.length);
@@ -23,7 +31,7 @@ export const Publications = () => {
             letterSpacing: "0.5px",
           }}
         >
-          Publications
+          Recent Publications
         </h2>
 
         {sortedPubs.slice(0, visibleCount).map((pub, idx) => (
@@ -38,17 +46,31 @@ export const Publications = () => {
               <Card.Text>
                 <strong>Year:</strong> {pub.year}
               </Card.Text>
-              {pub.link && (
-                <Button
-                  variant="primary"
-                  size="sm"
-                  href={pub.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Publication
-                </Button>
-              )}
+
+              <div className="d-flex gap-2">
+                {pub.link && (
+                  <Button
+                    variant="primary"
+                    size="sm"
+                    href={pub.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Publication
+                  </Button>
+                )}
+                {pub.code && (
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    href={pub.code}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Code
+                  </Button>
+                )}
+              </div>
             </Card.Body>
           </Card>
         ))}

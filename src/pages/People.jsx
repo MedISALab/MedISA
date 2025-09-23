@@ -30,12 +30,14 @@ const People = () => {
   const [searchParams] = useSearchParams();
   const type = searchParams.get("type")?.toLowerCase();
 
+  // Redirect to mentor link if type=mentor
   useEffect(() => {
     if (type === "mentor") {
       window.location.href = "https://research.iitj.ac.in/researcher/angshuman-paul-1";
     }
   }, [type]);
 
+  // Filter members based on type
   let filteredMembers = members;
 
   if (type === "phd") {
@@ -81,17 +83,34 @@ const People = () => {
           <Card.Text>{member.description}</Card.Text>
           <div className="mt-2 d-flex flex-wrap">
             {member.github && (
-              <Button variant="secondary" size="sm" className="me-2 mb-2" href={member.github} target="_blank" rel="noreferrer">
+              <Button
+                variant="secondary"
+                size="sm"
+                className="me-2 mb-2"
+                href={member.github}
+                target="_blank"
+                rel="noreferrer"
+              >
                 GitHub
               </Button>
             )}
             {member.portfolio && (
-              <Button variant="primary" size="sm" className="me-2 mb-2" href={member.portfolio} target="_blank" rel="noreferrer">
+              <Button
+                variant="primary"
+                size="sm"
+                className="me-2 mb-2"
+                href={member.portfolio}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Portfolio
               </Button>
             )}
             {member.name && (
-              <Link to={`/publications?name=${encodeURIComponent(member.name)}`} className="btn btn-warning btn-sm me-2 mb-2">
+              <Link
+                to={`/publications?name=${encodeURIComponent(member.name)}`}
+                className="btn btn-warning btn-sm me-2 mb-2"
+              >
                 Publications
               </Link>
             )}
@@ -119,33 +138,72 @@ const People = () => {
   return (
     <div style={{ backgroundColor: "#f8f9fa", padding: "2rem", minHeight: "80vh" }}>
       <Container style={{ fontFamily: "'Poppins', sans-serif" }}>
-        {/* Supervisor Section */}
+      {/* Supervisor Section or Placeholder */}
+      {!type ? (
         <div style={{ marginTop: "80px", textAlign: "center" }}>
           <div style={{ marginBottom: "20px" }}>
             <img
               src={require("../assets/img/profile_photo/supervisor.png")}
               alt="Supervisor"
-              style={{ width: "180px", height: "180px", borderRadius: "8px", objectFit: "cover" }}
+              style={{
+                width: "180px",
+                height: "180px",
+                borderRadius: "8px",
+                objectFit: "cover",
+              }}
             />
           </div>
           <p style={{ maxWidth: "700px", margin: "0 auto", color: "#333" }}>
             The MedISA Lab is led by Dr. Angshuman Paul, Assistant Professor in the
             Department of Computer Science and Engineering at IIT Jodhpur. Dr. Angshuman
             holds a Ph.D. in Computer Science from the Indian Statistical Institute,
-            Kolkata. Primary Research areas include Medical Image Analysis, Machine
+            Kolkata. Primary research areas include Medical Image Analysis, Machine
             Learning, and Computer Vision.
           </p>
-          <a
-            className="prof-link"
-            href="https://research.iitj.ac.in/researcher/angshuman-paul-1"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ display: "inline-block", marginTop: "10px", color: "#0d6efd", textDecoration: "none", fontWeight: "bold" }}
-          >
-            Read More
-          </a>
-          <hr style={{ paddingBottom: "10px", margin: "40px auto", width: "50%", borderTop: "2px solid #ccc" }} />
+          <div style={{ marginTop: "10px" }}>
+            <a
+              className="prof-link"
+              href="https://iitj.ac.in/People/Profile/14173529-10a4-4cc2-98e9-1b8c7c3f2808"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#0d6efd",
+                textDecoration: "none",
+                fontWeight: "bold",
+              }}
+            >
+              Office Website
+            </a>
+
+            <span style={{ margin: "0 10px", color: "#0d6efd" }}>|</span>
+
+            <a
+              className="prof-link"
+              href="https://sites.google.com/view/angshumanpaul/home"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#0d6efd",
+                textDecoration: "none",
+                fontWeight: "bold",
+              }}
+            >
+              Personal Website
+            </a>
+          </div>
+          <hr
+            style={{
+              paddingBottom: "0px",
+              margin: "40px auto",
+              width: "50%",
+              borderTop: "2px solid #ccc",
+            }}
+          />
         </div>
+      ) : (
+        // Placeholder block to push content below the navbar
+        <div style={{ height: "80px", backgroundColor: "transparent" }}></div>
+      )}
 
         <h2 className="mb-4 text-center" style={{ color: "black", fontWeight: 600, letterSpacing: "0.5px" }}>
           Present Members

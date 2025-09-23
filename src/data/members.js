@@ -64,7 +64,7 @@ export const members = [
   },
   { 
     name: "Avadhut Eknath Kabadi", 
-    program: "MTech-PhD AI (2023)", 
+    program: "M.Tech-PhD AI (2023)", 
     research: "Deep Learning, Computer Vision", 
     description: "My research focuses on enhancing medical image analysis by generating synthetic data using deep learning. It addresses the challenges posed by limited and restricted real-world datasets.", 
     github: "https://github.com/D23CSA001", 
