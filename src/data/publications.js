@@ -356,4 +356,38 @@ export const publications = [
     link: "https://iplab.dmi.unict.it/miss14/Poster/Paul_Angshuman_2014-05-19-12-51-29_Medical_Imaging_Summer_School_2014_Submission.pdf",
     code: ""
   }
+  ,
+  {
+    title: "Class-incremental learning using push-pull autoencoder for chest X-ray diagnosis",
+    authors: ["Jayant Mahawar", "Angshuman Paul"],
+    year: 2025,
+    link: "https://www.sciencedirect.com/science/article/pii/S0010482525016348",
+    code: "https://github.com/mahawar2/PPAE"
+  }
+  ,
+  {
+    title: "Distribution-guided Generative Replay with Semantic Prompts for Class-Incremental Chest X-ray Diagnosis",
+    authors: ["Jayant Mahawar", "Angshuman Paul", "Devi Prasad Maharathy"],
+    year: 2025,
+    link: "https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_122/paper.pdf",
+    code: "https://github.com/mahawar2/DPL-CIL"
+  }
 ];
+
+/*
+  {
+    title: "Test-Time Adaptation through Semantically-guided Feature Decomposition for Few-shot Chest X-ray Diagnosis",
+    authors: ["Jayant Mahawar", "Angshuman Paul"],
+    year: 2025,
+    link: "",
+    code: "https://github.com/mahawar2/TTAFD-FSL-CXR"
+  }
+  ,
+  {
+    title: "Traffic Forecasting using Deep Sequence Models with Vehicle Situation-aware Loss",
+    authors: ["Akash Chatterjee", "Jayant Mahawar", "Angshuman Paul"],
+    year: 2025,
+    link: "",
+    code: "https://github.com/Akashchatterj/Traffic-Forecasting-using-Deep-Sequence-Models"
+  }
+  */

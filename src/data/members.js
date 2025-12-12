@@ -28,7 +28,7 @@ export const members = [
   },
   { 
     name: "Harishankar Nagar", 
-    program: "M.Tech - Ph.D AI (2024)", 
+    program: "M.Tech-PhD AI (2024)", 
     research: "Reinforcement Learning", 
     description: "My research focuses on multi-agent coordination in reinforcement learning environments, aiming to develop scalable strategies that enable agents to collaborate efficiently and adapt to complex, dynamic tasks.", 
     github: "https://github.com/Thaniwal", 

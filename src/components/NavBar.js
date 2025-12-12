@@ -48,7 +48,7 @@ export const NavBar = () => {
     setTeamOpen(false); // close dropdown on click
     if (type === "mentor") {
       window.location.href =
-        "https://research.iitj.ac.in/researcher/angshuman-paul-1";
+        "https://sites.google.com/view/angshumanpaul/home";
     } else {
       navigate(`/people${type ? `?type=${type}` : ""}`);
     }
