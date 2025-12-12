@@ -1,7 +1,9 @@
 import 'react-multi-carousel/lib/styles.css';
 import cardImage from "../assets/img/highlight-img.png";
+import { texts } from "../data/text";
 
 export const Highlights = () => {
+  const { title, description} = texts.highlights;
   return (
     <section className="skill" id="skills">
       <div className="row">
@@ -11,10 +13,8 @@ export const Highlights = () => {
               <img src={cardImage} alt="Research Overview" className="overview-image" />
             </div>
             <div className="text-container">
-              <h2>RESEARCH OVERVIEW</h2>
-              <p> 
-                Our lab focuses on developing innovative deep learning solutions for medical imaging problems. Our research addresses key problems in areas such as disease detection and diagnosis. Currently, significant work is being done in medical image classification, segmentation, reconstruction, super resolution, synthetic data generation, etc. Our work also addresses challenges related to learning from distributed data, vision language modeling and reinforcement learning. Our goal is to develop deep learning solutions that are robust and effective in any real-world clinical settings.
-              </p>
+                <h2>{title}</h2>
+                <p>{description}</p>
             </div>
           </div>
         </div>

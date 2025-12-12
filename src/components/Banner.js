@@ -2,8 +2,11 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { texts } from "../data/text";
+import parse from "html-react-parser";
 
 export const Banner = () => {
+  const { title, description} = texts.banner;
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -53,12 +56,8 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "" : ""}>
-                  <h1>{`The MedISA LAB`}</h1>
-                  <p>
-                    <strong>MedISA</strong> stands for <strong>Medical Image Synthesis and Analysis</strong> —
-                     a research area dedicated to creating and interpreting visual data using
-                    advanced machine learning and deep learning techniques.
-                  </p>
+                  <h1>{title}</h1>
+                  <p>{parse(description)}</p>
                 </div>
               }
             </TrackVisibility>
