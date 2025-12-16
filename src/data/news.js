@@ -4,7 +4,7 @@ export const news = [
     authors: ["Jayant Mahawar", "Angshuman Paul"],
     year: 2025,
     description: "Class-incremental learning helps models adapt to new classes without past data. This supports long-term learning. In medical imaging, it integrates new diseases or imaging methods over time. CIL models for natural images struggle in chest x-rays diagnosis. Conversely, deep learning models that excel in chest x-ray diagnosis tend to suffer from catastrophic forgetting in a class-incremental setting. To address this, we propose a novel class-incremental learning framework specifically designed for chest x-ray analysis. Our approach utilizes both abnormality-specific and abnormality-agnostic information from the input data. We designed a model, the Push-Pull Autoencoder (PPAE), that uses a dual latent space representation to refine feature representations by disentangling abnormality-specific from abnormality-agnostic information. This enhances the model’s understanding of disease features. PPAE is trained in such a way that it brings the training samples closer together based on shared, abnormality-agnostic features, while simultaneously distinguishing them using abnormality-specific features. To retain critical knowledge without exhaustive retraining, we employ a coreset generation algorithm that selects representative exemplars from previous classes. This approach maintains diagnostic accuracy on previously learned diseases while adapting seamlessly to new classes. PPAE addresses the problem of catastrophic forgetting prominent in class-incremental learning. Experimental results show up to 3% improvement in terms of F1 score and up to 4% improvement in terms of AUROC across various chest x-ray datasets. It validates the robustness of our framework in incremental learning tasks, highlighting its potential to advance continuous chest x-ray diagnosis.",
-    Published: "CIBM"
+    published: "CIBM"
   }
   ,
   {
@@ -12,7 +12,7 @@ export const news = [
     authors: ["Jayant Mahawar", "Angshuman Paul"],
     year: 2025,
     description: "Training a deep neural network with a small amount of labeled data is challenging. The challenge is even more severe for medical images because of the many possible variations in the images. We propose a novel framework for few-shot chest x-ray (CXR) diagnosis. For classification problems, training with limited data may be facilitated if class-specific features can be extracted and utilized. Semantic information about the abnormalities may also be helpful in this context. To that end, we design an autoencoder-based approach that extracts visual features and decomposes them into class-agnostic and class-specific features utilizing the semantic information of the abnormalities. The decomposition helps in efficient classification using the class-specific features. Additionally, we perform test-time adaptation to deal with possible variations in the test data compared to the training data. From this perspective, our method is one of the first of its kind. Extensive evaluations on publicly available chest x-ray datasets under few-shot settings show the effectiveness of our method. Results on the publicly available chest x-ray datasets show a 3–5\% improvement in AUROC scores.",
-    Published: "WACV"
+    published: "WACV"
   }
   ,
   {
@@ -20,7 +20,7 @@ export const news = [
     authors: ["Akash Chatterjee", "Jayant Mahawar", "Angshuman Paul"],
     year: 2025,
     description: "Accurate traffic forecasting is crucial for modern intelligent transportation systems. Deep sequence models have shown great promise in trajectory prediction tasks, as they are capable of capturing temporal dependencies and learning complex motion dynamics. However, most existing approaches primarily focus on predicting only the velocity of the concerned vehicle. Even models that account for neighboring vehicles are often trained solely with velocity-based loss functions, without incorporating other crucial factors such as lane changes or varying traffic density. This could lead to the model being over-reliant on spurious correlations and having a limited behavioral understanding. To address this gap, we introduce a novel, composite loss function called Vehicle Situation-aware Loss (VSAL), which enables deep models to learn multiple interrelated traffic variables simultaneously. VSAL integrates distinct loss components such as velocity and position, geospatial accuracy, and lane-change classification. It also includes a self-consistency term to ensure that the predicted velocity and the predicted displacement for the vehicle are coherent. We apply VSAL to enhance three state-of-the-art sequence models (LSTM, GRU, and Transformer), creating the improved VS-LSTM, VS-GRU, and VS-Transformer variants. These models are trained on rich contextual features, including lane-specific gap distances and a novel Jam Factor. Our experiments demonstrate that the VS-models consistently and substantially outperform their baseline counterparts. Notably, the VS-Transformer achieves a remarkable velocity RMSE of 0.002, representing a substantial improvement over the baseline. The framework also achieves a low Haversine RMSE of 0.358 and a robust lane-change classification accuracy of over 77.20%.",
-    Published: "CVIP"
+    published: "CVIP"
   }
 ];
 /*
