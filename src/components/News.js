@@ -61,11 +61,9 @@ export const News = () => {
               <Card.Text>
                 <strong>Year:</strong> {item.year}
               </Card.Text>
-              {item.published && (
-                <Card.Text>
-                  <strong>Accepted in:</strong> {item.published}
-                </Card.Text>
-              )}
+              <Card.Text>
+                <strong>Accepted in:</strong> {item.published}
+              </Card.Text>
               {item.description && (
                 <Card.Text style={{ textAlign: "justify" }}>
                   {item.description}
