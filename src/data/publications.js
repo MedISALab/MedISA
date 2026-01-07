@@ -372,6 +372,14 @@ export const publications = [
     link: "https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_122/paper.pdf",
     code: "https://github.com/mahawar2/DPL-CIL"
   }
+  ,
+  {
+    title: "Feature-driven layer specialization for label heterogeneous federated learning",
+    authors: ["Obed Jamir", "Angshuman Paul"],
+    year: 2025,
+    link: "https://www.sciencedirect.com/science/article/pii/S0925231226000172?dgcid=author",
+    code: "https://github.com/obedjamir/FD-Fed.git"
+  }
 ];
 
 /*
