@@ -376,7 +376,7 @@ export const publications = [
   {
     title: "Feature-driven layer specialization for label heterogeneous federated learning",
     authors: ["Obed Jamir", "Angshuman Paul"],
-    year: 2025,
+    year: 2026,
     link: "https://www.sciencedirect.com/science/article/pii/S0925231226000172?dgcid=author",
     code: "https://github.com/obedjamir/FD-Fed.git"
   }
