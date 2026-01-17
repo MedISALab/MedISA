@@ -11,7 +11,7 @@ export const members = [
   { 
     name: "Aditi Ashish Baheti", 
     program: "M.Tech AI (2023 - 2025)", 
-    research: "Medical Image Diagnosis", 
+    research: "Super-resolution of Medical Images", 
     description: "Exploring techniques to enhance the resolution of CT images for improved medical diagnosis. My research focuses on leveraging anatomical context and adaptive learning strategies to generate high-quality, detail-preserving outputs.", 
     github: "https://github.com/bahetiaditi", 
     portfolio: "https://sites.google.com/view/aditi-baheti/home",
@@ -144,3 +144,4 @@ export const members = [
     group: "Visual Question Answering"
   }
 ];
+
