@@ -155,9 +155,9 @@ const People = () => {
           </div>
           <p style={{ maxWidth: "700px", margin: "0 auto", color: "#333" }}>
             The MedISA Lab is led by Dr. Angshuman Paul, Assistant Professor in the
-            Department of Computer Science and Engineering at IIT Jodhpur. Dr. Angshuman
+            Department of Computer Science and Engineering at IIT Jodhpur. Dr. Paul
             holds a Ph.D. in Computer Science from the Indian Statistical Institute,
-            Kolkata. Primary research areas include Medical Image Analysis, Machine
+            Kolkata. His primary research areas include Medical Image Synthesis & Analysis, Machine
             Learning, and Computer Vision.
           </p>
           <div style={{ marginTop: "10px" }}>
@@ -220,3 +220,4 @@ const People = () => {
 };
 
 export default People;
+
