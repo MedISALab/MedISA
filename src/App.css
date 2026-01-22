@@ -213,6 +213,18 @@ nav.navbar .navbar-toggler-icon:after {
   top: 8px;
 }
 
+.navbar-logo {
+  height: 85px;        /* adjust as needed */
+  width: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 32px;
+  }
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   nav.navbar {
