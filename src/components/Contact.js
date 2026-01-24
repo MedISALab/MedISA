@@ -20,17 +20,27 @@ export const Contact = () => {
                   <div className="contact-details mb-4">
                     <p>
                       <Linkedin className="me-2 text-primary" />
-                      <a
-                        href="https://www.linkedin.com/company/medisa-lab/posts/?feedView=all"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        LinkedIn
-                      </a>
+                        <a
+                          href="https://www.linkedin.com/company/medisa-lab/posts/?feedView=all"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            color: "#fff"
+                          }}
+                        >
+                          LinkedIn
+                        </a>
                     </p>
                     <p>
                       <EnvelopeFill className="me-2 text-primary" />
-                      <a href="mailto:medisa.iitj@gmail.com">medisa.iitj@gmail.com</a>
+                      <a 
+                      href="mailto:medisa.iitj@gmail.com"
+                      style={{
+                            color: "#fff",
+                          }}
+                      >
+                        medisa.iitj@gmail.com
+                      </a>
                     </p>
                     <p>
                       <TelephoneFill className="me-2 text-success" /> 291 280 1274
