@@ -297,7 +297,7 @@ nav.navbar .navbar-toggler-icon:after {
 .banner {
   position: relative; /* required for overlay */
   margin-top: 0;
-  padding: 180px 0 180px 0;
+  padding: 140px 0 140px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -344,7 +344,7 @@ nav.navbar .navbar-toggler-icon:after {
 }
 
 .banner h1 {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -424,11 +424,11 @@ nav.navbar .navbar-toggler-icon:after {
 /* 🔹 Mobile layout */
 @media (max-width: 768px) {
   .banner {
-    padding: 120px 15px 0 15px;
+    padding: 80px 15px 0 15px;
     text-align: center;
   }
   .banner h1 {
-    font-size: 34px;
+    font-size: 24px;
     margin-bottom: 15px;
   }
   .banner p {
@@ -532,11 +532,12 @@ nav.navbar .navbar-toggler-icon:after {
 .highlight-container {
   display: flex;
   gap: 20px;
-  align-items: center; /* vertically center image + text */
+  align-items: center;      /* vertically center image + text */
   justify-content: space-between;
   flex-wrap: wrap;
-  text-align: left;
-  padding: 20px;
+
+  text-align: justify;      /* 👈 block justification */
+  padding: 0px 20px;
 }
 
 .image-container {
@@ -564,6 +565,8 @@ nav.navbar .navbar-toggler-icon:after {
   .skill p {
     font-size: 16px;
     margin: 14px 0 50px 0;
+    align-items: center;
+    text-align: justify;
   }
 }
 
@@ -572,7 +575,7 @@ nav.navbar .navbar-toggler-icon:after {
   .highlight-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: justify;  
     padding: 15px;
   }
 
@@ -597,6 +600,8 @@ nav.navbar .navbar-toggler-icon:after {
   .skill p {
     font-size: 15px;
     margin-bottom: 40px;
+    align-items: center;
+    text-align: justify;
   }
 }
 
