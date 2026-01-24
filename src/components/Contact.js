@@ -34,12 +34,12 @@ export const Contact = () => {
                     <p>
                       <EnvelopeFill className="me-2 text-primary" />
                       <a 
-                      href="mailto:medisa.iitj@gmail.com"
+                      href="mailto:ai.for.medisa@gmail.com"
                       style={{
                             color: "#fff",
                           }}
                       >
-                        medisa.iitj@gmail.com
+                        ai.for.medisa@gmail.com
                       </a>
                     </p>
                     <p>
