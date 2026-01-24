@@ -214,7 +214,7 @@ nav.navbar .navbar-toggler-icon:after {
 }
 
 .navbar-logo {
-  height: 85px;        /* adjust as needed */
+  height: 60px;        /* adjust as needed */
   width: auto;
   cursor: pointer;
 }
@@ -350,7 +350,11 @@ nav.navbar .navbar-toggler-icon:after {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+
+  /* slight shadow */
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
+
 
 .banner p {
   color: rgb(255, 255, 255);
@@ -504,7 +508,7 @@ nav.navbar .navbar-toggler-icon:after {
 }
 
 .skill img {
-  border: 10px solid white;
+  border: 10px solid rgb(190, 220, 255);
   width: 100%;
   height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 1);

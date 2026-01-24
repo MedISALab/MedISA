@@ -52,12 +52,12 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={12}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "" : ""}>
                   <h1>{title}</h1>
-                  <p>{parse(description)}</p>
+                  <h1>{parse(description)}</h1>
                 </div>
               }
             </TrackVisibility>

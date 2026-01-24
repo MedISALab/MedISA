@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { useNavigate, useLocation } from "react-router-dom";
-import logo from "../assets/img/new_logo.png"
+import dummy_logo from "../assets/img/dummy_logo.png"
 
 export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -62,7 +62,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""} expanded={expanded}>
       <Navbar.Brand onClick={() => navigate("/")} className="medai-brand">
         <img
-          src={logo}
+          src={dummy_logo}
           alt="MedISA Lab Logo"
           className="navbar-logo"
         />

@@ -1,6 +1,7 @@
 import 'react-multi-carousel/lib/styles.css';
 import cardImage from "../assets/img/highlight-img.png";
 import { texts } from "../data/text";
+import logo from "../assets/img/new_logo.png"
 
 export const Highlights = () => {
   const { title, description} = texts.highlights;
@@ -10,7 +11,7 @@ export const Highlights = () => {
         <div className="col-12">
           <div className="skill-bx wow zoomIn highlight-container">
             <div className="image-container">
-              <img src={cardImage} alt="Research Overview" className="overview-image" />
+              <img src={logo} alt="Research Overview" className="overview-image" />
             </div>
             <div className="text-container">
                 <h2>{title}</h2>
