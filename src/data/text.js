@@ -6,7 +6,7 @@ export const texts = {
   },
   highlights: {
     title: "RESEARCH OVERVIEW",
-    description: "The MedISA Lab (Medical Image Synthesis & Analysis Lab) focuses on developing innovative AI solutions for medical image synthesis and analysis problems to facilitate affordable healthcare. Our research addresses key problems in areas such as disease diagnosis, segmentation, reconstruction, super resolution, synthetic data generation, etc. Our work also addresses challenges related to learning from distributed data, vision language modeling and reinforcement learning. Our goal is to develop deep learning solutions that are robust and effective in any real-world clinical settings.",
+    description: "The Medical Image Synthesis and Analysis (MedISA) Lab, mentored by Dr. Angshuman Paul, focuses on deep learning, statistical machine learning, and computer vision methods for medical image synthesis, analysis, and quality enhancement with the goal of facilitating affordable healthcare. Our research addresses key problems in clinical imaging, including synthetic and missing data generation, super-resolution, disease diagnosis, and image segmentation. We also study learning from distributed and heterogeneous data sources using federated learning, and develop annotation-efficient models. Our objective is to design robust and reliable learning frameworks for deployment in real-world clinical settings.",
   }
 };
 
