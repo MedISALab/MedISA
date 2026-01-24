@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { EnvelopeFill, TelephoneFill, GeoAltFill } from 'react-bootstrap-icons';
+import { Linkedin } from "react-bootstrap-icons";
 
 export const Contact = () => {
   return (
@@ -17,6 +18,16 @@ export const Contact = () => {
 
                   {/* Contact Details with Icons */}
                   <div className="contact-details mb-4">
+                    <p>
+                      <Linkedin className="me-2 text-primary" />
+                      <a
+                        href="https://www.linkedin.com/company/medisa-lab/posts/?feedView=all"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        LinkedIn
+                      </a>
+                    </p>
                     <p>
                       <EnvelopeFill className="me-2 text-primary" />
                       <a href="mailto:medisa.iitj@gmail.com">medisa.iitj@gmail.com</a>
