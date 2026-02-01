@@ -1,5 +1,12 @@
 export const news = [
   {
+    title: "MPD-CXR: Diffusion Model with Multi-Perspective Semantic Conditioning for Chest X-Ray Synthesis from Report",
+    authors: ["Avadhut Eknath Kabadi", "Angshuman Paul"],
+    year: 2026,
+    description: "Clinically accurate medical images, synthesized artificially, can facilitate data augmentation, and training of medical personnel. However, existing models often struggle to maintain fine-grained anatomical structures and faithfully represent pathological findings. We propose a diffusion framework to synthesize images from chest x-ray reports. Our model captures multiple perspectives from chest x-ray reports through time-aware text guidance , potentially acquiring anatomical detail and pathology. This contribute to the synthesis of accurate chest x-ray images from the reports. The quality of the synthesized images is further enhanced through noise initialization strategies and adversarial refinement that evaluate both image realism and consistency with the corresponding reports. Experiments on publicly available chest x-ray datasets show a 12.23% improvement in FID compared to state-of-the-art approaches.",
+    published: "International Symposium on Biomedical Imaging"
+  },
+  {
     title: "CAC-GAN: High-Fidelity Synthesis of MRI Sequences using Contrast-Aware CycleGAN",
     authors: ["Rinku Sadh", "Prabhat Ranjan", "Angshuman Paul"],
     year: 2026,
