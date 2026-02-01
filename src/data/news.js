@@ -1,11 +1,27 @@
 export const news = [
   {
+    title: "CAC-GAN: High-Fidelity Synthesis of MRI Sequences using Contrast-Aware CycleGAN",
+    authors: ["Rinku Sadh", "Prabhat Ranjan", "Angshuman Paul"],
+    year: 2026,
+    description: "Artificial synthesis of MRI sequences can reduce scan time, cost, and patient discomfort by synthesizing different MRI sequences from one input sequence. However, existing GAN-based approaches struggle with structural inconsistencies and sequence-specific variations, especially across different field strengths. To address these challenges, we propose a Contrast-aware CycleGAN (CAC-GAN), integrating three key innovations: (i) Single Cycle Consistency Loss (SCCL), which enforces cycle constraints only in the target contrast direction to preserve contrast variations; (ii) Feature Matching (LFM), which aims to align intermediate image representations to enhance structural fidelity in synthesized images; and (iii) Contrast Loss (Lc), enforcing matching of pixel intensity distributions to stabilize global contrast. We evaluate our approach on publicly available datasets of different magnetic field strengths. Our model is computationally lightweight. Comparisons against state-of-the art approaches show up to 10% improvement in both SSIM and PSNR.",
+    published: "International Symposium on Biomedical Imaging"
+  },
+  {
+    title: "DBCoreset: A Density-based Coreset Algorithm for Computationally Efficient Chest X-ray Diagnosis",
+    authors: ["Jayant Mahawar", "Angshuman Paul"],
+    year: 2026,
+    description: "Coreset generation is a data reduction method that facilitates efficient deep learning training. A good coreset can achieve comparable performance using a much smaller number of training samples. However, traditional coreset methods exhibit density bias. This bias leads to poor representation of subregions that are sparsely populated by data points within a class. To solve this, we propose a novel Density-based Coreset Generation algorithm to facilitate computationally efficient chest x-ray diagnosis. We first partition the feature space into fine-grained, clinically-relevant miniclusters utilizing density. We then introduce a scoring-based selection mechanism. It helps in finding out the representative datapoints to eventually train a classifier model. Furthermore, we enforce a minimum inclusion criterion for every minicluster. This step aims to mitigate density bias so that coverage of all pathological patterns may be possible. Training the downstream classifier on the curated coreset demonstrates improved performance and balance. On the publicly available dataset, we used only about one third of the training data and achieved a 40% reduction in computational resources. Even with this reduction, we have achieved as close as 83.01% ± 0.36 with our method compared to 83.37% ± 0.78 on the full dataset. We also outperform other coreset-based methods. Our method also reduces skewness in the class-wise data distribution.",
+    published: "International Symposium on Biomedical Imaging"
+  },
+  {
     title: "Feature-driven layer specialization for label heterogeneous federated learning",
     authors: ["Obed Jamir", "Angshuman Paul"],
     year: 2026,
     description: "Federated Learning (FL) has redefined how models are trained across distributed systems by enabling decentralized training without compromising data privacy. This allows organizations and institutions with sensitive information to collaborate effectively while ensuring confidentiality. However, diversity in client data distributions poses unique challenges that require innovative solutions. Recent advances in FL have shown promising results by tailoring personalized models for each client’s data distribution, but very few methods address the complexities introduced by label heterogeneity. Existing methods require clients to share their class labels with the server to build a homogeneous label distribution for all clients. However, this may not be possible for clients with strict privacy regulations, such as medical institutions. In this study, we introduce a novel approach to manage label heterogeneity across clients without sharing labels. Our method dynamically separates client models into general and specialized layers to accommodate client-agnostic and client-specific features, respectively. In each communication round, the general layers are updated with the parameters of the global model, while the specialized layers are preserved. This selective layer update is followed by fine-tuning of specialized layers for each client model to better adapt to the client’s local data distribution while exploiting shared representations through the general layers. Experimental evaluations on publicly available chest X-ray and natural image datasets demonstrate that our method outperforms several state-of-the-art FL techniques.",
     published: "Neurocomputing"
-  },
+  }
+];
+/*
   {
     title: "Class-incremental learning using push-pull autoencoder for chest X-ray diagnosis",
     authors: ["Jayant Mahawar", "Angshuman Paul"],
@@ -19,9 +35,7 @@ export const news = [
     year: 2025,
     description: "Training a deep neural network with a small amount of labeled data is challenging. The challenge is even more severe for medical images because of the many possible variations in the images. We propose a novel framework for few-shot chest x-ray (CXR) diagnosis. For classification problems, training with limited data may be facilitated if class-specific features can be extracted and utilized. Semantic information about the abnormalities may also be helpful in this context. To that end, we design an autoencoder-based approach that extracts visual features and decomposes them into class-agnostic and class-specific features utilizing the semantic information of the abnormalities. The decomposition helps in efficient classification using the class-specific features. Additionally, we perform test-time adaptation to deal with possible variations in the test data compared to the training data. From this perspective, our method is one of the first of its kind. Extensive evaluations on publicly available chest x-ray datasets under few-shot settings show the effectiveness of our method. Results on the publicly available chest x-ray datasets show a 3–5% improvement in AUROC scores.",
     published: "IEEE/CVF Winter Conference on Applications of Computer Vision"
-  }
-];
-/*
+  },
   {
     title: "Traffic Forecasting using Deep Sequence Models with Vehicle Situation-aware Loss",
     authors: ["Akash Chatterjee", "Jayant Mahawar", "Angshuman Paul"],
