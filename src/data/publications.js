@@ -379,23 +379,26 @@ export const publications = [
     year: 2026,
     link: "https://www.sciencedirect.com/science/article/pii/S0925231226000172?dgcid=author",
     code: "https://github.com/obedjamir/FD-Fed.git"
-  }
-];
-
-/*
+  },
+  {
+    title: "Traffic Forecasting using Deep Sequence Models with Vehicle Situation-aware Loss",
+    authors: ["Akash Chatterjee", "Jayant Mahawar", "Angshuman Paul"],
+    year: 2026,
+    link: "",
+    code: "https://github.com/Akashchatterj/Traffic-Forecasting-using-Deep-Sequence-Models"
+  },
   {
     title: "Test-Time Adaptation through Semantically-guided Feature Decomposition for Few-shot Chest X-ray Diagnosis",
     authors: ["Jayant Mahawar", "Angshuman Paul"],
     year: 2025,
     link: "",
     code: "https://github.com/mahawar2/TTAFD-FSL-CXR"
-  }
-  ,
+  },
   {
-    title: "Traffic Forecasting using Deep Sequence Models with Vehicle Situation-aware Loss",
-    authors: ["Akash Chatterjee", "Jayant Mahawar", "Angshuman Paul"],
+    title: "Few-Shot Diagnosis of Chest X-Ray Images using Auxiliary Information Guided Semideterministic Infinite Mixture Prototypes",
+    authors: ["Prabhala Sandhya Gayatri","Devi Prasad Maharathy","Angshuman Paul"],
     year: 2025,
-    link: "",
-    code: "https://github.com/Akashchatterj/Traffic-Forecasting-using-Deep-Sequence-Models"
+    link: "https://www.sciencedirect.com/science/article/pii/S0010482525014052",
+    code: "https://github.com/dpmaharathy/Few-Shot-Diagnosis-of-Chest-X-Rays-using-auxiliary-information-and-semi-deterministic-IMP-CIBM"
   }
-  */
+];
