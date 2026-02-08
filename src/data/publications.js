@@ -400,5 +400,12 @@ export const publications = [
     year: 2025,
     link: "https://www.sciencedirect.com/science/article/pii/S0010482525014052",
     code: "https://github.com/dpmaharathy/Few-Shot-Diagnosis-of-Chest-X-Rays-using-auxiliary-information-and-semi-deterministic-IMP-CIBM"
+  },
+  {
+    title: "MFA-U-Net:U-Net with Multi-level Feature Aggregation for Scale-free Medical Image Segmentation",
+    authors: ["Swapnil Thatte", "Paromita Banerjee", "Mayank Vatsa", "Richa Singh", "Bhanu Duggal", "Angshuman Paul"],
+    year: 2025,
+    link: "",
+    code: ""
   }
 ];
