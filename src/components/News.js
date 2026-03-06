@@ -59,10 +59,8 @@ export const News = () => {
                 {item.authors.join(", ")}
               </Card.Subtitle>
               <Card.Text>
-                <strong>Year:</strong> {item.year}
-              </Card.Text>
-              <Card.Text>
                 <strong>Accepted in:</strong> {item.published}
+                <strong>Year:</strong> {item.year}
               </Card.Text>
               {item.description && (
                 <Card.Text style={{ textAlign: "justify" }}>
