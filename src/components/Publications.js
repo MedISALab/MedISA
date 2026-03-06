@@ -45,8 +45,7 @@ export const Publications = () => {
               </Card.Subtitle>
               <Card.Text>
                 <strong>Venue:</strong> {pub.venue}
-              </Card.Text>
-              <Card.Text>
+                <br></br>
                 <strong>Year:</strong> {pub.year}
               </Card.Text>
 

@@ -67,7 +67,9 @@ export default function IndvPublications() {
                   {pub.authors.join(", ")}
                 </Card.Subtitle>
                 <Card.Text>
-                  <strong>Year:</strong> {pub.year}
+                <strong>Venue:</strong> {pub.venue}
+                <br></br>
+                <strong>Year:</strong> {pub.year}
                 </Card.Text>
 
                 <div className="d-flex gap-2">
