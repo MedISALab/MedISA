@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.3a3411eb.css",
-    "main.js": "./static/js/main.d7de34bb.js",
+    "main.js": "./static/js/main.0b796c2f.js",
     "static/js/453.73239b16.chunk.js": "./static/js/453.73239b16.chunk.js",
     "static/media/Avadhut Eknath Kabadi.png": "./static/media/Avadhut Eknath Kabadi.69dce48e96325853c85b.png",
     "static/media/highlight-img.png": "./static/media/highlight-img.491615534ff7ad7df336.png",
-    "static/media/new_logo.png": "./static/media/new_logo.780cf7f52298e8ee6373.png",
     "static/media/banner-bg.png": "./static/media/banner-bg.f16606fcd783e158050c.png",
     "static/media/Varun Raskar.png": "./static/media/Varun Raskar.807407670d5da40b5bf8.png",
+    "static/media/new_logo.png": "./static/media/new_logo.b71948a2d25dce86d1cc.png",
     "static/media/Aditi Ashish Baheti.jpeg": "./static/media/Aditi Ashish Baheti.9cd7d5b039c5a65f009d.jpeg",
     "static/media/supervisor.png": "./static/media/supervisor.d4c010e6d9a6d0b91c52.png",
     "static/media/Jayant Mahawar.jpg": "./static/media/Jayant Mahawar.b7b42cab516744074155.jpg",
@@ -35,11 +35,11 @@
     "static/media/nav-icon1.svg": "./static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.3a3411eb.css.map": "./static/css/main.3a3411eb.css.map",
-    "main.d7de34bb.js.map": "./static/js/main.d7de34bb.js.map",
+    "main.0b796c2f.js.map": "./static/js/main.0b796c2f.js.map",
     "453.73239b16.chunk.js.map": "./static/js/453.73239b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a3411eb.css",
-    "static/js/main.d7de34bb.js"
+    "static/js/main.0b796c2f.js"
   ]
 }
