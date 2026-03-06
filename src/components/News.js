@@ -60,6 +60,7 @@ export const News = () => {
               </Card.Subtitle>
               <Card.Text>
                 <strong>Accepted in:</strong> {item.published}
+                <br></br>
                 <strong>Year:</strong> {item.year}
               </Card.Text>
               {item.description && (
