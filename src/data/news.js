@@ -1,5 +1,14 @@
 export const news = [
   {
+    title: "SAFE-Diff: Structurally Anchored Diffusion for Anatomically Faithful CT Image Super-Resolution",
+    authors: ["Sneha", "Nivedita Gupta", "Angshuman Paul"],
+    year: 2026,
+    description: "CT super-resolution requires balancing perceptual sharpness with anatomical accuracy, a trade-off that existing super-resolution models often fail to maintain. We propose SAFE-Diff, a lightweight two-stage framework that addresses this trade-off. Stage 1 uses a deterministic residual prediction network with Squeeze-and-Excitation blocks to recover anatomical structure. Stage 2 applies a truncated diffusion refiner conditioned on Stage 1 output, enhancing fine detail while mitigating hallucination. A Stationary Wavelet Transform (SWT) fusion integrates stable low-frequency anatomy from Stage 1 with high-frequency details from Stage 2 to produce the final super-resolved image. On the LiTS and KiTS benchmarks (4× upsampling), SAFE-Diff achieves at least 46.9% improvement in LPIPS over state-of-the-art methods, while maintaining competitive PSNR and SSIM. The model operates with ~22.5M parameters and only 2 DDIM inference steps, making it computationally efficient compared to existing diffusion-based approaches.",
+    published: "Conference on Medical Image Computing and Computer Assisted Intervention"
+  }
+];
+/* TODO: Add News for Sneha and Nivedita, Shoaib, Obed 
+  {
     title: "MPD-CXR: Diffusion Model with Multi-Perspective Semantic Conditioning for Chest X-Ray Synthesis from Report",
     authors: ["Avadhut Eknath Kabadi", "Angshuman Paul"],
     year: 2026,
@@ -20,6 +29,7 @@ export const news = [
     description: "Coreset generation is a data reduction method that facilitates efficient deep learning training. A good coreset can achieve comparable performance using a much smaller number of training samples. However, traditional coreset methods exhibit density bias. This bias leads to poor representation of subregions that are sparsely populated by data points within a class. To solve this, we propose a novel Density-based Coreset Generation algorithm to facilitate computationally efficient chest x-ray diagnosis. We first partition the feature space into fine-grained, clinically-relevant miniclusters utilizing density. We then introduce a scoring-based selection mechanism. It helps in finding out the representative datapoints to eventually train a classifier model. Furthermore, we enforce a minimum inclusion criterion for every minicluster. This step aims to mitigate density bias so that coverage of all pathological patterns may be possible. Training the downstream classifier on the curated coreset demonstrates improved performance and balance. On the publicly available dataset, we used only about one third of the training data and achieved a 40% reduction in computational resources. Even with this reduction, we have achieved as close as 83.01% ± 0.36 with our method compared to 83.37% ± 0.78 on the full dataset. We also outperform other coreset-based methods. Our method also reduces skewness in the class-wise data distribution.",
     published: "International Symposium on Biomedical Imaging"
   },
+
   {
     title: "Feature-driven layer specialization for label heterogeneous federated learning",
     authors: ["Obed Jamir", "Angshuman Paul"],
@@ -27,8 +37,7 @@ export const news = [
     description: "Federated Learning (FL) has redefined how models are trained across distributed systems by enabling decentralized training without compromising data privacy. This allows organizations and institutions with sensitive information to collaborate effectively while ensuring confidentiality. However, diversity in client data distributions poses unique challenges that require innovative solutions. Recent advances in FL have shown promising results by tailoring personalized models for each client’s data distribution, but very few methods address the complexities introduced by label heterogeneity. Existing methods require clients to share their class labels with the server to build a homogeneous label distribution for all clients. However, this may not be possible for clients with strict privacy regulations, such as medical institutions. In this study, we introduce a novel approach to manage label heterogeneity across clients without sharing labels. Our method dynamically separates client models into general and specialized layers to accommodate client-agnostic and client-specific features, respectively. In each communication round, the general layers are updated with the parameters of the global model, while the specialized layers are preserved. This selective layer update is followed by fine-tuning of specialized layers for each client model to better adapt to the client’s local data distribution while exploiting shared representations through the general layers. Experimental evaluations on publicly available chest X-ray and natural image datasets demonstrate that our method outperforms several state-of-the-art FL techniques.",
     published: "Neurocomputing"
   }
-];
-/*
+
   {
     title: "Class-incremental learning using push-pull autoencoder for chest X-ray diagnosis",
     authors: ["Jayant Mahawar", "Angshuman Paul"],

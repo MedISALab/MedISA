@@ -435,7 +435,7 @@ export const publications = [
     title: "Traffic Forecasting using Deep Sequence Models with Vehicle Situation-aware Loss",
     authors: ["Akash Chatterjee", "Jayant Mahawar", "Angshuman Paul"],
     year: 2026,
-    venue: "Conference on Computer Vision and Image Processing (CCIP)",
+    venue: "Conference on Computer Vision and Image Processing (CVIP)",
     link: "",
     code: "https://github.com/Akashchatterj/Traffic-Forecasting-using-Deep-Sequence-Models"
   },
@@ -462,5 +462,31 @@ export const publications = [
     venue: "",
     link: "",
     code: ""
+  },
+  {
+    title: "MPD-CXR: Diffusion Model with Multi-Perspective Semantic Conditioning for Chest X-Ray Synthesis from Report",
+    authors: ["Avadhut Eknath Kabadi", "Angshuman Paul"],
+    year: 2026,
+    venue: "International Symposium on Biomedical Imaging",
+    link: "https://ieeexplore.ieee.org/abstract/document/11515721",
+    code: "https://github.com/D23CSA001/MPD-CXR-Diffusion-Model-for-CXR-synthesis"
+  },
+  {
+    title: "DBCoreset: A Density-based Coreset Algorithm for Computationally Efficient Chest X-ray Diagnosis",
+    authors: ["Jayant Mahawar", "Angshuman Paul"],
+    year: 2026,
+    venue: "International Symposium on Biomedical Imaging",
+    link: "https://ieeexplore.ieee.org/abstract/document/11515429",
+    code: "https://github.com/mahawar2/DbCoreset.git"
+  },
+  {
+    title: "CAC-GAN: High-Fidelity Synthesis of MRI Sequences using Contrast-Aware CycleGAN",
+    authors: ["Rinku Sadh", "Angshuman Paul"],
+    year: 2026,
+    venue: "International Symposium on Biomedical Imaging",
+    link: "",
+    code: ""
   }
+
+  // TODO: 3 entries for Avadhut, Jayant and Rinku
 ];
