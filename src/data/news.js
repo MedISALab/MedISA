@@ -4,7 +4,14 @@ export const news = [
     authors: ["Sneha", "Nivedita Gupta", "Angshuman Paul"],
     year: 2026,
     description: "CT super-resolution requires balancing perceptual sharpness with anatomical accuracy, a trade-off that existing super-resolution models often fail to maintain. We propose SAFE-Diff, a lightweight two-stage framework that addresses this trade-off. Stage 1 uses a deterministic residual prediction network with Squeeze-and-Excitation blocks to recover anatomical structure. Stage 2 applies a truncated diffusion refiner conditioned on Stage 1 output, enhancing fine detail while mitigating hallucination. A Stationary Wavelet Transform (SWT) fusion integrates stable low-frequency anatomy from Stage 1 with high-frequency details from Stage 2 to produce the final super-resolved image. On the LiTS and KiTS benchmarks (4× upsampling), SAFE-Diff achieves at least 46.9% improvement in LPIPS over state-of-the-art methods, while maintaining competitive PSNR and SSIM. The model operates with ~22.5M parameters and only 2 DDIM inference steps, making it computationally efficient compared to existing diffusion-based approaches.",
-    published: "Conference on Medical Image Computing and Computer Assisted Intervention"
+    published: "Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)"
+  },
+  {
+    title: "Federated Medical Image Segmentation under Modality Heterogeneity via Specialized Adapters ",
+    authors: ["Obed Jamir", "Angshuman Paul"],
+    year: 2026,
+    description: "Differences in imaging modalities across institutions (e.g., MRI and CT) introduce significant challenges in deploying federated learning in real-world settings for medical image segmentation. To address this challenge, we propose FedMoSA, a robust federated framework for handling severe modality heterogeneity, where clients may be fully modality-disjoint. FedMoSA explicitly decouples modality-specific and modality-agnostic representation learning through the integration of specialized adapters and shared adapters within the image encoder of SAM(Segment Anything Model). To enable stable optimization under modality heterogeneity, we introduce modality-restricted aggregation for specialized adapters and modality-balanced aggregation for shared components. Furthermore, we incorporate a prototype-based alignment mechanism to promote consistent shared adapter representations across clients. We evaluate FedMoSA on publicly available multi-institution, multi-modal liver segmentation datasets under diverse federated configurations, including explicit generalizability testing. FedMoSA achieves up to +8.5 Dice improvement under fully modality-disjoint setting over state-of-the-art federated medical image segmentation methods, with a substantial reduction in inter-client performance variance.",
+    published: "Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)"
   }
 ];
 /* TODO: Add News for Sneha and Nivedita, Shoaib, Obed 

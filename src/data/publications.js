@@ -484,8 +484,8 @@ export const publications = [
     authors: ["Rinku Sadh", "Angshuman Paul"],
     year: 2026,
     venue: "International Symposium on Biomedical Imaging",
-    link: "",
-    code: ""
+    link: "https://ieeexplore.ieee.org/abstract/document/11515973",
+    code: "https://github.com/RINKUSADH/CAC-GAN"
   }
 
   // TODO: 3 entries for Avadhut, Jayant and Rinku
