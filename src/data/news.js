@@ -1,5 +1,12 @@
 export const news = [
   {
+    title: "MedCalib: Behavioral Post-hoc Confidence Calibration for Safe Deployment of Medical Vision-Language Models",
+    authors: ["Shoaib Shafi", "Angshuman Paul"],
+    year: 2026,
+    description: "Medical Vision-Language Models (VLMs) often produce highly confident yet incorrect answers, creating significant risks in clinical decision-support systems. This paper introduces MedCalib, a post-hoc confidence calibration framework that estimates prediction reliability from observable model behavior rather than relying on self-reported confidence scores. MedCalib combines three complementary behavioral signals: Option-Marginal Probability (OMP) to measure belief concentration over answer choices, Perturbation Consistency (PC) to evaluate robustness under visual, textual, and answer-order variations, and Sampling Entropy (SE) to quantify stability across stochastic generations. These signals are fused through supervised learning and isotonic regression to generate calibrated confidence estimates without modifying the underlying VLM. Experiments on multiple medical VLMs and Med-VQA benchmarks demonstrate substantial reductions in calibration error and improved discrimination between correct and incorrect predictions, enabling safer deployment of medical AI systems by reducing overconfident errors and better aligning confidence with empirical correctness",
+    published: "Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)"
+  },
+  {
     title: "SAFE-Diff: Structurally Anchored Diffusion for Anatomically Faithful CT Image Super-Resolution",
     authors: ["Sneha", "Nivedita Gupta", "Angshuman Paul"],
     year: 2026,
@@ -14,7 +21,7 @@ export const news = [
     published: "Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)"
   }
 ];
-/* TODO: Add News for Sneha and Nivedita, Shoaib, Obed 
+/*  
   {
     title: "MPD-CXR: Diffusion Model with Multi-Perspective Semantic Conditioning for Chest X-Ray Synthesis from Report",
     authors: ["Avadhut Eknath Kabadi", "Angshuman Paul"],
