@@ -1,5 +1,12 @@
 export const news = [
   {
+    title: " AGLDM: ATTRIBUTE-GUIDED ZERO-SHOT TEXT-TO-IMAGE SYNTHESIS USING DATA-EFFICIENT LATENT DIFFUSION MODEL WITH SELF-CONSISTENCY LOSS. ",
+    authors: ["Sougata Moi", "Angshuman Paul"],
+    year: 2026,
+    description: "Current AI image generation often requires billions of training images and massive supercomputer clusters—resources that are out of reach for most researchers. This makes it incredibly difficult to generate high-quality visuals for niche domains like rare species or medical anomalies. In this work, we propose AGLDM, a breakthrough method that: Generates high-quality images of rare or specialized objects using significantly less data, Operates efficiently on a single GPU rather than massive clusters, Leverages both text descriptions and structured attributes for smarter guidance. This research democratizes generative AI, making state-of-the-art image synthesis accessible to organizations without massive tech infrastructure. From wildlife conservation to synthetic medical data for diagnostics, the real-world applications are vast.",
+    published: "IEEE International Conference on Image Processing (ICIP)"
+  },
+  {
     title: "MedCalib: Behavioral Post-hoc Confidence Calibration for Safe Deployment of Medical Vision-Language Models",
     authors: ["Shoaib Shafi", "Angshuman Paul"],
     year: 2026,
