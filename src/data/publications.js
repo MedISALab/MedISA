@@ -291,7 +291,7 @@ export const publications = [
     title: "Anomaly guided generalizable super-resolution of chest x-ray images using multi-level information rendering",
     authors: ["VV Yadagiri", "S Reddy", "Angshuman Paul"],
     year: 2023,
-    venue: "WACV Workshop on Applications of Medical AI",
+    venue: "MICCAI workshop proceedings on Deep Generative Models",
     link: "https://link.springer.com/chapter/10.1007/978-3-031-53767-7_8",
     code: ""
   },
