@@ -1,5 +1,12 @@
 export const news = [
   {
+    title: "FedDSR: Codebook-Based Distribution Alignment for Heterogeneous Federated CT Super-Resolution",
+    authors: ["Suvadip Chakraborty", "Obed Jamir","Angshuman Paul"],
+    year: 2026,
+    description: "Applying Federated Learning to healthcare often struggles with large model overhead and diverse patient data. FedDSR addresses this through a lightweight, two-stage framework: it leverages client codebooks for robust global aggregation and utilizes independent local decoders for personalized, institution-specific results.",
+    published: "MICCAI Workshop on Deep Generative Models (DGM)"
+  },
+  {
     title: "Federated Chest X-ray Diagnosis under Label Heterogeneity via Disease-Aligned Prototype",
     authors: ["Obed Jamir", "Angshuman Paul"],
     year: 2026,
