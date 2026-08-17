@@ -1,5 +1,12 @@
 export const news = [
   {
+    title: "Federated Chest X-ray Diagnosis under Label Heterogeneity via Disease-Aligned Prototype",
+    authors: ["Obed Jamir", "Angshuman Paul"],
+    year: 2026,
+    description: "Chest x-ray diagnosis is performed across hospitals with diverse patient populations and clinical priorities, so different institutions often annotate different subsets of thoracic abnormalities. This variation in label distributions is inherent to medical federated learning (FL) and constrains its deployment in real-world clinical settings, yet remains largely underexplored. Most existing FL approaches assume a homogeneous label space or require institutions to share their diagnostic labels to construct a global taxonomy. These assumptions rarely hold in practice due to privacy regulations and institutional constraints. We propose FedDAP, a federated learning framework for chest x-ray diagnosis with heterogeneous labels that operates without sharing local labels or raw data. Our approach maps local feature representations into a shared semantic space defined by disease-aligned class prototypes. At the server, a dynamic layer-wise aggregation strategy weights each layer according to its discriminative capability, allowing clients to contribute meaningfully across the network layers. Experiments on three public chest x-ray datasets under 3-client and 6-client configurations show consistent gains over the strongest state-of-the-art baseline, with a relative improvement of up to 3.7% in accuracy and up to +1.60 AUROC.",
+    published: "MICCAI Workshop on Distributed, Collaborative and Federated Learning (DeCaF)"
+  },
+  {
     title: " AGLDM: ATTRIBUTE-GUIDED ZERO-SHOT TEXT-TO-IMAGE SYNTHESIS USING DATA-EFFICIENT LATENT DIFFUSION MODEL WITH SELF-CONSISTENCY LOSS. ",
     authors: ["Sougata Moi", "Angshuman Paul"],
     year: 2026,
