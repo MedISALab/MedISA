@@ -1,17 +1,17 @@
 export const news = [
   {
-    title: "FedDSR: Codebook-Based Distribution Alignment for Heterogeneous Federated CT Super-Resolution",
-    authors: ["Suvadip Chakraborty", "Obed Jamir","Angshuman Paul"],
-    year: 2026,
-    description: "Federated Learning (FL) enables privacy-preserving decentralized training, making it well-suited for healthcare. We study CT super-resolution (SR) in a heterogeneous FL setting, where each client holds CT scans of a different anatomical region. Generative SR models are typically large, leading to high communication overhead, while data heterogeneity across clients further degrades performance. We propose FedDSR, a two-stage lightweight federated framework for heterogeneous CT image super-resolution. In the first stage, we introduce a distribution-aware aggregation strategy that leverages client codebook embeddings to capture semantic similarity across clients, producing robust and representative global encoder updates. In the second stage, each client independently fine-tunes its local decoder on institution-specific data, enabling personalization without modifying the shared encoder. Experiments on four public CT datasets, each assigned to a separate client, show that FedDSR outperforms state-of-the-art FL baselines. FedDSR achieves 3.2\% higher PSNR, 0.33\% higher SSIM, and 33.5\% lower LPIPS, along with improved FID.",
-    published: "MICCAI Workshop on Deep Generative Models (DGM)"
-  },
-  {
     title: "Federated Chest X-ray Diagnosis under Label Heterogeneity via Disease-Aligned Prototype",
     authors: ["Obed Jamir", "Angshuman Paul"],
     year: 2026,
     description: "Chest x-ray diagnosis is performed across hospitals with diverse patient populations and clinical priorities, so different institutions often annotate different subsets of thoracic abnormalities. This variation in label distributions is inherent to medical federated learning (FL) and constrains its deployment in real-world clinical settings, yet remains largely underexplored. Most existing FL approaches assume a homogeneous label space or require institutions to share their diagnostic labels to construct a global taxonomy. These assumptions rarely hold in practice due to privacy regulations and institutional constraints. We propose FedDAP, a federated learning framework for chest x-ray diagnosis with heterogeneous labels that operates without sharing local labels or raw data. Our approach maps local feature representations into a shared semantic space defined by disease-aligned class prototypes. At the server, a dynamic layer-wise aggregation strategy weights each layer according to its discriminative capability, allowing clients to contribute meaningfully across the network layers. Experiments on three public chest x-ray datasets under 3-client and 6-client configurations show consistent gains over the strongest state-of-the-art baseline, with a relative improvement of up to 3.7% in accuracy and up to +1.60 AUROC.",
     published: "MICCAI Workshop on Distributed, Collaborative and Federated Learning (DeCaF)"
+  },
+  {
+    title: "FedDSR: Codebook-Based Distribution Alignment for Heterogeneous Federated CT Super-Resolution",
+    authors: ["Suvadip Chakraborty", "Obed Jamir","Angshuman Paul"],
+    year: 2026,
+    description: "Federated Learning (FL) enables privacy-preserving decentralized training, making it well-suited for healthcare. We study CT super-resolution (SR) in a heterogeneous FL setting, where each client holds CT scans of a different anatomical region. Generative SR models are typically large, leading to high communication overhead, while data heterogeneity across clients further degrades performance. We propose FedDSR, a two-stage lightweight federated framework for heterogeneous CT image super-resolution. In the first stage, we introduce a distribution-aware aggregation strategy that leverages client codebook embeddings to capture semantic similarity across clients, producing robust and representative global encoder updates. In the second stage, each client independently fine-tunes its local decoder on institution-specific data, enabling personalization without modifying the shared encoder. Experiments on four public CT datasets, each assigned to a separate client, show that FedDSR outperforms state-of-the-art FL baselines. FedDSR achieves 3.2\% higher PSNR, 0.33\% higher SSIM, and 33.5\% lower LPIPS, along with improved FID.",
+    published: "MICCAI Workshop on Deep Generative Models (DGM)"
   },
   {
     title: " AGLDM: ATTRIBUTE-GUIDED ZERO-SHOT TEXT-TO-IMAGE SYNTHESIS USING DATA-EFFICIENT LATENT DIFFUSION MODEL WITH SELF-CONSISTENCY LOSS. ",
