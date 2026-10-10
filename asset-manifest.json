@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3a3411eb.css",
-    "main.js": "./static/js/main.f4b97e78.js",
+    "main.js": "./static/js/main.6ae99b3e.js",
     "static/js/453.73239b16.chunk.js": "./static/js/453.73239b16.chunk.js",
     "static/media/Avadhut Eknath Kabadi.png": "./static/media/Avadhut Eknath Kabadi.69dce48e96325853c85b.png",
     "static/media/highlight-img.png": "./static/media/highlight-img.491615534ff7ad7df336.png",
@@ -31,10 +31,10 @@
     "static/media/Devi Prasad Maharathy.jpeg": "./static/media/Devi Prasad Maharathy.3ce82c6881631b3f30d5.jpeg",
     "static/media/Atharv Mahajan.jpeg": "./static/media/Atharv Mahajan.98c0f2a012cd6c91a385.jpeg",
     "static/media/Obed Jamir.png": "./static/media/Obed Jamir.023177f8895293faf98c.png",
-    "static/media/Rinku Sadh.jpg": "./static/media/Rinku Sadh.970d7e6d7796d794279b.jpg",
     "static/media/Rahul Mandal.jpeg": "./static/media/Rahul Mandal.5cc2e3400f4239684485.jpeg",
     "static/media/Zobiya Khalid.jpeg": "./static/media/Zobiya Khalid.9d3d27184bcf67e060f3.jpeg",
     "static/media/Harishankar Nagar.jpg": "./static/media/Harishankar Nagar.e0b04cea3dba65a36ec3.jpg",
+    "static/media/Rinku Sadh.jpg": "./static/media/Rinku Sadh.b88adf311b077f6b5283.jpg",
     "static/media/Nivedita Gupta.jpeg": "./static/media/Nivedita Gupta.a9f31889d239c9c91645.jpeg",
     "static/media/Jatin Pankaj Pahuja.jpg": "./static/media/Jatin Pankaj Pahuja.ed98f8d88eb5f8dce9bc.jpg",
     "static/media/Priya Barange.jpeg": "./static/media/Priya Barange.6070746423c159e084ac.jpeg",
@@ -59,11 +59,11 @@
     "static/media/nav-icon1.svg": "./static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.3a3411eb.css.map": "./static/css/main.3a3411eb.css.map",
-    "main.f4b97e78.js.map": "./static/js/main.f4b97e78.js.map",
+    "main.6ae99b3e.js.map": "./static/js/main.6ae99b3e.js.map",
     "453.73239b16.chunk.js.map": "./static/js/453.73239b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a3411eb.css",
-    "static/js/main.f4b97e78.js"
+    "static/js/main.6ae99b3e.js"
   ]
 }
