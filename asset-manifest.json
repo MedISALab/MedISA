@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3a3411eb.css",
-    "main.js": "./static/js/main.ec7b2ef3.js",
+    "main.js": "./static/js/main.be756752.js",
     "static/js/453.73239b16.chunk.js": "./static/js/453.73239b16.chunk.js",
     "static/media/Avadhut Eknath Kabadi.png": "./static/media/Avadhut Eknath Kabadi.69dce48e96325853c85b.png",
     "static/media/highlight-img.png": "./static/media/highlight-img.491615534ff7ad7df336.png",
@@ -23,6 +23,7 @@
     "static/media/Nivedita Gupta.jpeg": "./static/media/Nivedita Gupta.a9f31889d239c9c91645.jpeg",
     "static/media/Jatin Pankaj Pahuja.jpg": "./static/media/Jatin Pankaj Pahuja.932c2b36427af73239ca.jpg",
     "static/media/Shoiab Shafi.jpeg": "./static/media/Shoiab Shafi.57d79f58331b25fa4282.jpeg",
+    "static/media/Priya Barange.jpeg": "./static/media/Priya Barange.27d01b0bb6b84155af38.jpeg",
     "static/media/CentraNo2-Bold.ttf": "./static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "./static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/Shrusti Jain.jpeg": "./static/media/Shrusti Jain.6736547568201826d9a8.jpeg",
@@ -40,11 +41,11 @@
     "static/media/nav-icon1.svg": "./static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.3a3411eb.css.map": "./static/css/main.3a3411eb.css.map",
-    "main.ec7b2ef3.js.map": "./static/js/main.ec7b2ef3.js.map",
+    "main.be756752.js.map": "./static/js/main.be756752.js.map",
     "453.73239b16.chunk.js.map": "./static/js/453.73239b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a3411eb.css",
-    "static/js/main.ec7b2ef3.js"
+    "static/js/main.be756752.js"
   ]
 }
