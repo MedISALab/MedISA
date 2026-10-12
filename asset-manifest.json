@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3a3411eb.css",
-    "main.js": "./static/js/main.fb6aa173.js",
+    "main.js": "./static/js/main.2da16a6a.js",
     "static/js/453.73239b16.chunk.js": "./static/js/453.73239b16.chunk.js",
     "static/media/Avadhut Eknath Kabadi.png": "./static/media/Avadhut Eknath Kabadi.69dce48e96325853c85b.png",
     "static/media/highlight-img.png": "./static/media/highlight-img.491615534ff7ad7df336.png",
@@ -51,6 +51,7 @@
     "static/media/Shilajit Banerjee.jpg": "./static/media/Shilajit Banerjee.b54c285fbee3c55978ec.jpg",
     "static/media/Sneha.jpeg": "./static/media/Sneha.ea530d6a8f757da6e2a0.jpeg",
     "static/media/Dattatreyo Roy.jpg": "./static/media/Dattatreyo Roy.6a296750ceb980179f35.jpg",
+    "static/media/Vishal Kishore.jpeg": "./static/media/Vishal Kishore.d28a4b88c80fb5050b2e.jpeg",
     "static/media/Kapil Akanksha.jpeg": "./static/media/Kapil Akanksha.6607d84c48e453ad6eb4.jpeg",
     "static/media/revicons.eot": "./static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "./static/media/revicons.57fd05d4ae650374c8de.ttf",
@@ -61,11 +62,11 @@
     "static/media/nav-icon1.svg": "./static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.3a3411eb.css.map": "./static/css/main.3a3411eb.css.map",
-    "main.fb6aa173.js.map": "./static/js/main.fb6aa173.js.map",
+    "main.2da16a6a.js.map": "./static/js/main.2da16a6a.js.map",
     "453.73239b16.chunk.js.map": "./static/js/453.73239b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a3411eb.css",
-    "static/js/main.fb6aa173.js"
+    "static/js/main.2da16a6a.js"
   ]
 }
