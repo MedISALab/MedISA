@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3a3411eb.css",
-    "main.js": "./static/js/main.f1c60a52.js",
+    "main.js": "./static/js/main.fb6aa173.js",
     "static/js/453.73239b16.chunk.js": "./static/js/453.73239b16.chunk.js",
     "static/media/Avadhut Eknath Kabadi.png": "./static/media/Avadhut Eknath Kabadi.69dce48e96325853c85b.png",
     "static/media/highlight-img.png": "./static/media/highlight-img.491615534ff7ad7df336.png",
@@ -19,6 +19,7 @@
     "static/media/Hrishita Das.jpeg": "./static/media/Hrishita Das.d66373a3e937c29e5f17.jpeg",
     "static/media/Radhasyam Nunna.jpeg": "./static/media/Radhasyam Nunna.462bdfccb8ff0b63f904.jpeg",
     "static/media/Laksh Mendpara.jpeg": "./static/media/Laksh Mendpara.4bf3ad80d6544b3de4fc.jpeg",
+    "static/media/Rinku Sadh.jpg": "./static/media/Rinku Sadh.ebb6245085cbe7155071.jpg",
     "static/media/Suvadip Chakraborty.png": "./static/media/Suvadip Chakraborty.23e42814128197367606.png",
     "static/media/Keshava Chowdari Dabbara.jpeg": "./static/media/Keshava Chowdari Dabbara.5eea9a0717917d625cc6.jpeg",
     "static/media/Ali Asad Quasim.jpeg": "./static/media/Ali Asad Quasim.1687f667fc75d2f3fee1.jpeg",
@@ -34,7 +35,6 @@
     "static/media/Rahul Mandal.jpeg": "./static/media/Rahul Mandal.5cc2e3400f4239684485.jpeg",
     "static/media/Zobiya Khalid.jpeg": "./static/media/Zobiya Khalid.9d3d27184bcf67e060f3.jpeg",
     "static/media/Harishankar Nagar.jpg": "./static/media/Harishankar Nagar.e0b04cea3dba65a36ec3.jpg",
-    "static/media/Rinku Sadh.jpg": "./static/media/Rinku Sadh.b88adf311b077f6b5283.jpg",
     "static/media/Nivedita Gupta.jpeg": "./static/media/Nivedita Gupta.a9f31889d239c9c91645.jpeg",
     "static/media/Advaith Moholkar.jpeg": "./static/media/Advaith Moholkar.6a60d3bf07c139883160.jpeg",
     "static/media/Vinamra Gupta.jpeg": "./static/media/Vinamra Gupta.0bf20b69c6782ada6e11.jpeg",
@@ -61,11 +61,11 @@
     "static/media/nav-icon1.svg": "./static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.3a3411eb.css.map": "./static/css/main.3a3411eb.css.map",
-    "main.f1c60a52.js.map": "./static/js/main.f1c60a52.js.map",
+    "main.fb6aa173.js.map": "./static/js/main.fb6aa173.js.map",
     "453.73239b16.chunk.js.map": "./static/js/453.73239b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a3411eb.css",
-    "static/js/main.f1c60a52.js"
+    "static/js/main.fb6aa173.js"
   ]
 }
