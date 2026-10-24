@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.3a3411eb.css",
-    "main.js": "./static/js/main.e31d5b1a.js",
+    "main.css": "./static/css/main.28682cdf.css",
+    "main.js": "./static/js/main.33d4fa31.js",
     "static/js/453.73239b16.chunk.js": "./static/js/453.73239b16.chunk.js",
     "static/media/Avadhut Eknath Kabadi.png": "./static/media/Avadhut Eknath Kabadi.69dce48e96325853c85b.png",
     "static/media/highlight-img.png": "./static/media/highlight-img.491615534ff7ad7df336.png",
     "static/media/banner-bg.png": "./static/media/banner-bg.f16606fcd783e158050c.png",
     "static/media/Varun Raskar.png": "./static/media/Varun Raskar.95895fa66e05bd021e95.png",
     "static/media/new_logo.png": "./static/media/new_logo.b71948a2d25dce86d1cc.png",
+    "static/media/Satvik_Sept_2026.jpg": "./static/media/Satvik_Sept_2026.de1a49d6113cfa40a4ca.jpg",
+    "static/media/Outing_2026.jpg": "./static/media/Outing_2026.4fb451bf76eba6dc56f5.jpg",
     "static/media/Parneeka Prakash Makde.png": "./static/media/Parneeka Prakash Makde.4acf32f768754dbdb135.png",
     "static/media/Harsh Parashar.jpeg": "./static/media/Harsh Parashar.4781624847aea9894493.jpeg",
+    "static/media/KT_Jayant_Sir_last_day.jpg": "./static/media/KT_Jayant_Sir_last_day.585c1762e70911cf7d25.jpg",
     "static/media/Aditi Ashish Baheti.jpeg": "./static/media/Aditi Ashish Baheti.9cd7d5b039c5a65f009d.jpeg",
     "static/media/supervisor.png": "./static/media/supervisor.d4c010e6d9a6d0b91c52.png",
     "static/media/Jayant Mahawar.jpg": "./static/media/Jayant Mahawar.b7b42cab516744074155.jpg",
     "static/media/Rakshith R Pai.png": "./static/media/Rakshith R Pai.faa8beaeb4f34bd342e8.png",
+    "static/media/Shamiyana_2026.jpg": "./static/media/Shamiyana_2026.d0d8af88b6f16a44fcfd.jpg",
     "static/media/Akash Chatterjee.png": "./static/media/Akash Chatterjee.b20cee5db473f2a1ce3c.png",
+    "static/media/Kali_Pahadi_Apr_2026.jpg": "./static/media/Kali_Pahadi_Apr_2026.12a9b49e40a1f2512052.jpg",
     "static/media/Sougata Moi.png": "./static/media/Sougata Moi.6c6eed9bf10264e78163.png",
     "static/media/Krishna Thoriya.png": "./static/media/Krishna Thoriya.2026dfcc99fc275934b2.png",
     "static/media/Hrishita Das.jpeg": "./static/media/Hrishita Das.d66373a3e937c29e5f17.jpeg",
@@ -27,6 +32,7 @@
     "static/media/Sweta Srivastava.png": "./static/media/Sweta Srivastava.b6f03527a5da02ad15cc.png",
     "static/media/Juhi Chaudhary.jpeg": "./static/media/Juhi Chaudhary.ac0456d4344ee50d1f52.jpeg",
     "static/media/Prabhat Ranjan.jpeg": "./static/media/Prabhat Ranjan.6533561fc1293a532d07.jpeg",
+    "static/media/Dinner_Apr_2026.jpg": "./static/media/Dinner_Apr_2026.f302748380171d7c6bb7.jpg",
     "static/media/Arjun Baidya.jpeg": "./static/media/Arjun Baidya.ad61bc928df0f20c8a5a.jpeg",
     "static/media/Chandra Manglani.jpeg": "./static/media/Chandra Manglani.2c1559e9b1ea23b711e3.jpeg",
     "static/media/Mangaldeep Banerjee.jpeg": "./static/media/Mangaldeep Banerjee.ccb6ca46d0ca664a86b9.jpeg",
@@ -34,6 +40,7 @@
     "static/media/Atharv Mahajan.jpeg": "./static/media/Atharv Mahajan.98c0f2a012cd6c91a385.jpeg",
     "static/media/Obed Jamir.png": "./static/media/Obed Jamir.023177f8895293faf98c.png",
     "static/media/Rahul Mandal.jpeg": "./static/media/Rahul Mandal.5cc2e3400f4239684485.jpeg",
+    "static/media/Shamiyana-2025.jpg": "./static/media/Shamiyana-2025.6e355a723c8beef18e3e.jpg",
     "static/media/Zobiya Khalid.jpeg": "./static/media/Zobiya Khalid.9d3d27184bcf67e060f3.jpeg",
     "static/media/Harishankar Nagar.jpg": "./static/media/Harishankar Nagar.e0b04cea3dba65a36ec3.jpg",
     "static/media/Nivedita Gupta.jpeg": "./static/media/Nivedita Gupta.a9f31889d239c9c91645.jpeg",
@@ -48,6 +55,7 @@
     "static/media/Shrusti Jain.jpeg": "./static/media/Shrusti Jain.6736547568201826d9a8.jpeg",
     "static/media/Gautam Kumar.png": "./static/media/Gautam Kumar.b0913a9f770468d6721d.png",
     "static/media/CentraNo2-Book.ttf": "./static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/2026 M.Tech Graduates.jpg": "./static/media/2026 M.Tech Graduates.95ca800ac8b4a8614568.jpg",
     "static/media/Harshith Kethireddy.png": "./static/media/Harshith Kethireddy.16d42147ce69c65659fb.png",
     "static/media/Shilajit Banerjee.jpg": "./static/media/Shilajit Banerjee.b54c285fbee3c55978ec.jpg",
     "static/media/Sneha.jpeg": "./static/media/Sneha.ea530d6a8f757da6e2a0.jpeg",
@@ -62,12 +70,12 @@
     "index.html": "./index.html",
     "static/media/nav-icon1.svg": "./static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.3a3411eb.css.map": "./static/css/main.3a3411eb.css.map",
-    "main.e31d5b1a.js.map": "./static/js/main.e31d5b1a.js.map",
+    "main.28682cdf.css.map": "./static/css/main.28682cdf.css.map",
+    "main.33d4fa31.js.map": "./static/js/main.33d4fa31.js.map",
     "453.73239b16.chunk.js.map": "./static/js/453.73239b16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a3411eb.css",
-    "static/js/main.e31d5b1a.js"
+    "static/css/main.28682cdf.css",
+    "static/js/main.33d4fa31.js"
   ]
 }
