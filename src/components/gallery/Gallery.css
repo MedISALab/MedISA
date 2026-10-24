@@ -1,0 +1,690 @@
+/************ Gallery ************/
+/* Light, calm theme. Motion is slow and inspired by medical imaging:
+   photos are revealed by a scan line and then "come into focus",
+   corner brackets frame a photo like a scan viewer. */
+
+.gallery-page {
+  --g-bg: #f5f8f9;
+  --g-surface: #ffffff;
+  --g-surface-muted: #eaf1f3;
+  --g-border: rgba(22, 52, 66, 0.09);
+  --g-text: #1d2b33;
+  --g-muted: #66767e;
+  --g-accent: #0e8aa8;
+  --g-accent-soft: rgba(14, 138, 168, 0.32);
+  --g-accent-faint: rgba(14, 138, 168, 0.08);
+  --g-shadow: 0 1px 2px rgba(22, 52, 66, 0.05), 0 6px 18px -10px rgba(22, 52, 66, 0.18);
+  --g-shadow-hover: 0 2px 4px rgba(22, 52, 66, 0.04), 0 22px 44px -22px rgba(14, 110, 140, 0.35);
+  --g-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --g-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --g-reveal: 1.6s;
+
+  background-color: var(--g-bg);
+  color: var(--g-text);
+  min-height: 80vh;
+  padding-bottom: 80px;
+}
+
+.gallery-fade-up {
+  animation: gallery-fade-up 1.1s var(--g-ease) var(--delay, 0ms) both;
+}
+
+/* ---------- Header ---------- */
+.gallery-header {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 16px 56px;
+  text-align: center;
+  background: linear-gradient(180deg, #e9f3f6 0%, var(--g-bg) 100%);
+}
+
+/* Faint imaging grid */
+.gallery-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(22, 52, 66, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 52, 66, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 25%, transparent 72%);
+  mask-image: radial-gradient(ellipse at center, #000 25%, transparent 72%);
+}
+
+/* Slowly breathing glow */
+.gallery-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 45%, rgba(45, 200, 228, 0.14), transparent 55%);
+  animation: gallery-breathe 9s ease-in-out infinite;
+}
+
+.gallery-header-scan {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 0;
+  height: 1px;
+  z-index: 1;
+  background: linear-gradient(90deg, transparent, var(--g-accent-soft), transparent);
+  box-shadow: 0 0 20px 3px rgba(45, 200, 228, 0.15);
+  animation: gallery-header-scan 11s ease-in-out infinite;
+}
+
+.gallery-header-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-eyebrow {
+  font-family: var(--g-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--g-accent);
+  margin-bottom: 14px;
+}
+
+.gallery-title {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--g-text);
+  margin-bottom: 14px;
+}
+
+.gallery-subtitle {
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--g-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.gallery-stats {
+  margin: 20px 0 0;
+  font-family: var(--g-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--g-muted);
+}
+
+/* ---------- Controls ---------- */
+.gallery-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 48px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--g-border);
+}
+
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-chip {
+  background: var(--g-surface);
+  color: var(--g-muted);
+  border: 1px solid var(--g-border);
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-size: 0.9rem;
+  transition: color 0.5s var(--g-ease), border-color 0.5s var(--g-ease), background-color 0.5s var(--g-ease);
+}
+
+.gallery-chip:hover {
+  color: var(--g-text);
+  border-color: var(--g-accent-soft);
+}
+
+.gallery-chip.active {
+  color: var(--g-accent);
+  border-color: var(--g-accent-soft);
+  background-color: var(--g-accent-faint);
+}
+
+.gallery-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  padding: 3px;
+  background: var(--g-surface);
+  border: 1px solid var(--g-border);
+  border-radius: 999px;
+}
+
+.gallery-sort-label {
+  font-family: var(--g-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--g-muted);
+  padding: 0 8px 0 12px;
+}
+
+.gallery-sort button {
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  color: var(--g-muted);
+  padding: 5px 14px;
+  font-size: 0.85rem;
+  transition: color 0.5s var(--g-ease), background-color 0.5s var(--g-ease);
+}
+
+.gallery-sort button:hover {
+  color: var(--g-text);
+}
+
+.gallery-sort button.active {
+  color: var(--g-accent);
+  background-color: var(--g-accent-faint);
+}
+
+/* ---------- Dated groups ---------- */
+.gallery-group {
+  margin-bottom: 64px;
+}
+
+.gallery-group-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.9s var(--g-ease), transform 0.9s var(--g-ease);
+}
+
+.gallery-group.is-visible .gallery-group-header {
+  opacity: 1;
+  transform: none;
+}
+
+.gallery-group-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--g-accent);
+  animation: gallery-pulse 3.2s ease-out infinite;
+}
+
+.gallery-group-label {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--g-text);
+}
+
+.gallery-group-count {
+  font-family: var(--g-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--g-muted);
+}
+
+.gallery-group-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--g-accent-soft), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1.8s var(--g-ease) 0.2s;
+}
+
+.gallery-group.is-visible .gallery-group-line {
+  transform: scaleX(1);
+}
+
+/* ---------- Grid & cards ---------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: 210px;
+  grid-auto-flow: dense;
+  gap: 20px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid var(--g-border);
+  border-radius: 16px;
+  background: var(--g-surface-muted);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--g-shadow);
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 1s var(--g-ease) var(--delay),
+    transform 1s var(--g-ease) var(--delay),
+    border-color 0.6s var(--g-ease),
+    box-shadow 0.6s var(--g-ease);
+}
+
+.gallery-card.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.gallery-card.is-featured {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-card:hover,
+.gallery-card:focus-visible {
+  outline: none;
+  border-color: var(--g-accent-soft);
+  box-shadow: var(--g-shadow-hover);
+}
+
+.gallery-card-media {
+  position: absolute;
+  inset: 0;
+  transition: transform 1.6s var(--g-ease);
+}
+
+.gallery-card:hover .gallery-card-media {
+  transform: scale(1.04);
+}
+
+.gallery-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: inset(0 0 100% 0);
+  filter: blur(10px) saturate(0.25) brightness(1.12);
+  transition: filter 1.8s var(--g-ease);
+}
+
+/* Scan reveal, then come into focus */
+.gallery-card.is-revealed .gallery-card-media img {
+  animation: gallery-scan-clip var(--g-reveal) ease-in-out var(--delay) forwards;
+  filter: none;
+  transition-delay: calc(var(--delay) + 0.5s);
+}
+
+.gallery-card-scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(14, 138, 168, 0.8), transparent);
+  box-shadow: 0 0 16px 3px rgba(45, 200, 228, 0.35);
+}
+
+.gallery-card.is-revealed .gallery-card-scan {
+  animation:
+    gallery-scan-move var(--g-reveal) ease-in-out var(--delay) forwards,
+    gallery-scan-fade var(--g-reveal) linear var(--delay) forwards;
+}
+
+/* Corner brackets, like a scan viewer frame */
+.gallery-viewfinder {
+  --vf: var(--g-accent);
+  --vf-len: 18px;
+  --vf-w: 1.5px;
+  position: absolute;
+  inset: 16px;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    linear-gradient(var(--vf), var(--vf)) left top / var(--vf-len) var(--vf-w) no-repeat,
+    linear-gradient(var(--vf), var(--vf)) left top / var(--vf-w) var(--vf-len) no-repeat,
+    linear-gradient(var(--vf), var(--vf)) right top / var(--vf-len) var(--vf-w) no-repeat,
+    linear-gradient(var(--vf), var(--vf)) right top / var(--vf-w) var(--vf-len) no-repeat,
+    linear-gradient(var(--vf), var(--vf)) left bottom / var(--vf-len) var(--vf-w) no-repeat,
+    linear-gradient(var(--vf), var(--vf)) left bottom / var(--vf-w) var(--vf-len) no-repeat,
+    linear-gradient(var(--vf), var(--vf)) right bottom / var(--vf-len) var(--vf-w) no-repeat,
+    linear-gradient(var(--vf), var(--vf)) right bottom / var(--vf-w) var(--vf-len) no-repeat;
+  transition: opacity 0.7s var(--g-ease), inset 0.9s var(--g-ease);
+}
+
+/* White brackets read best on top of photos */
+.gallery-card .gallery-viewfinder {
+  --vf: rgba(255, 255, 255, 0.95);
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.35));
+}
+
+.gallery-card:hover .gallery-viewfinder,
+.gallery-card:focus-visible .gallery-viewfinder {
+  opacity: 1;
+  inset: 10px;
+}
+
+/* Frosted caption panel */
+.gallery-card-caption {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.86);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 14px -8px rgba(22, 52, 66, 0.3);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.7s var(--g-ease), transform 0.7s var(--g-ease);
+}
+
+.gallery-card:hover .gallery-card-caption,
+.gallery-card:focus-visible .gallery-card-caption {
+  opacity: 1;
+  transform: none;
+}
+
+.gallery-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--g-text);
+}
+
+.gallery-card-meta {
+  font-family: var(--g-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--g-muted);
+}
+
+/* ---------- Empty state ---------- */
+.gallery-empty {
+  text-align: center;
+  color: var(--g-muted);
+  padding: 40px 0 60px;
+}
+
+.gallery-empty-frame {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.gallery-empty-frame .gallery-viewfinder {
+  inset: 0;
+  opacity: 0.7;
+}
+
+.gallery-empty-scan {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--g-accent), transparent);
+  box-shadow: 0 0 12px 2px rgba(45, 200, 228, 0.3);
+  animation: gallery-header-scan 4s ease-in-out infinite;
+}
+
+/* ---------- Lightbox ---------- */
+/* Sits above the fixed navbar (z-index 9999) */
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 80px 40px;
+  background: rgba(243, 247, 248, 0.94);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  animation: gallery-fade 0.5s ease both;
+}
+
+.gallery-lightbox-hud {
+  position: absolute;
+  top: 26px;
+  left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--g-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--g-muted);
+}
+
+.gallery-lightbox-hud span:last-child {
+  color: var(--g-accent);
+}
+
+.gallery-lightbox-figure {
+  margin: 0;
+  max-width: min(1100px, 100%);
+  text-align: center;
+  animation: gallery-focus-in 0.8s var(--g-ease) both;
+}
+
+.gallery-lightbox-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-lightbox-frame img {
+  display: block;
+  max-width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 30px 60px -30px rgba(22, 52, 66, 0.45);
+}
+
+.gallery-lightbox-frame .gallery-viewfinder {
+  inset: -12px;
+  opacity: 0.55;
+  --vf-len: 22px;
+}
+
+.gallery-lightbox-figure figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 24px;
+}
+
+.gallery-lightbox-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--g-text);
+}
+
+.gallery-lightbox-meta {
+  font-family: var(--g-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--g-muted);
+}
+
+.gallery-lightbox-description {
+  max-width: 680px;
+  margin: 8px auto 0;
+  color: var(--g-muted);
+  line-height: 1.6;
+}
+
+.gallery-lightbox-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--g-border);
+  background: var(--g-surface);
+  color: var(--g-text);
+  box-shadow: var(--g-shadow);
+  transition: border-color 0.5s var(--g-ease), color 0.5s var(--g-ease), background-color 0.5s var(--g-ease);
+}
+
+.gallery-lightbox-btn:hover,
+.gallery-lightbox-btn:focus-visible {
+  outline: none;
+  color: var(--g-accent);
+  border-color: var(--g-accent-soft);
+  background: #f0f8fa;
+}
+
+.gallery-lightbox-close {
+  top: 20px;
+  right: 20px;
+}
+
+.gallery-lightbox-nav {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gallery-lightbox-nav.prev {
+  left: 20px;
+}
+
+.gallery-lightbox-nav.next {
+  right: 20px;
+}
+
+/* ---------- Keyframes ---------- */
+@keyframes gallery-fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes gallery-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes gallery-breathe {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.06); }
+}
+
+@keyframes gallery-header-scan {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  55% { top: 100%; opacity: 0.6; }
+  60%, 100% { top: 100%; opacity: 0; }
+}
+
+@keyframes gallery-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(14, 138, 168, 0.45); }
+  70%, 100% { box-shadow: 0 0 0 10px rgba(14, 138, 168, 0); }
+}
+
+/* Clip and scan line share one easing so the line tracks the reveal edge */
+@keyframes gallery-scan-clip {
+  from { clip-path: inset(0 0 100% 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes gallery-scan-move {
+  from { top: 0; }
+  to { top: 100%; }
+}
+
+@keyframes gallery-scan-fade {
+  0% { opacity: 0; }
+  10%, 85% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes gallery-focus-in {
+  from { opacity: 0; transform: scale(0.97); filter: blur(8px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .gallery-header {
+    padding-top: 120px;
+  }
+
+  .gallery-grid {
+    grid-auto-rows: 230px;
+  }
+
+  .gallery-card.is-featured {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .gallery-sort {
+    margin-left: 0;
+  }
+
+  .gallery-lightbox {
+    padding: 80px 16px 90px;
+  }
+
+  .gallery-lightbox-nav {
+    top: auto;
+    bottom: 24px;
+    transform: none;
+  }
+}
+
+/* Touch screens have no hover, so keep captions visible */
+@media (hover: none) {
+  .gallery-card-caption {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-page *,
+  .gallery-page *::before,
+  .gallery-page *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .gallery-card,
+  .gallery-group-header {
+    opacity: 1;
+    transform: none;
+  }
+
+  .gallery-card-media img {
+    clip-path: none;
+    filter: none;
+  }
+
+  .gallery-card-scan,
+  .gallery-header-scan {
+    display: none;
+  }
+
+  .gallery-group-line {
+    transform: none;
+  }
+}

@@ -15,6 +15,7 @@ import { Contact } from "./components/Contact";
 // Example pages for routes
 import People from './pages/People';
 import IndvPublications from './pages/Publications';
+import Gallery from './pages/Gallery';
 import { useEffect } from 'react';
 
 // Wrapper for Home page to handle hash navigation
@@ -53,6 +54,7 @@ function App() {
           {/* Separate pages */}
           <Route path="/publications" element={<IndvPublications />} />
           <Route path="/people" element={<People />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </Router>

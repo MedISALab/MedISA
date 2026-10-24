@@ -120,6 +120,13 @@ export const NavBar = () => {
             Publications & Code
           </Nav.Link>
 
+          <Nav.Link
+            className={linkClass("/gallery")}
+            onClick={() => handleNavClick("/gallery")}
+          >
+            Gallery
+          </Nav.Link>
+
           <Nav.Link className="navbar-link" onClick={() => handleNavClick("#contact")}>
             Contact
           </Nav.Link>
