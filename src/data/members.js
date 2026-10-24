@@ -158,7 +158,7 @@ export const members = [
     name: "Shrusti Jain", 
     program: "M.Tech CSE (2025)", 
     research: "Multi-Sequence MRI Synthesis", 
-    description: "My research focuses on synthesizing missing MRI sequences from available sequences using generative deep learning techniques. The work aims to preserve anatomical consistency and improve quality and physical plausibility of synthesized 3D MRI data.", 
+    description: "My research focuses on exploring deep learning approaches for MRI synthesis, with an emphasis on developing effective methods for medical image generation and improving the quality of synthesized MRI data.", 
     github: " https://github.com/svj31", 
     portfolio: null,
     group: "Affordable MRI synthesis"
