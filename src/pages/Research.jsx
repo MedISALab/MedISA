@@ -77,9 +77,14 @@ const Research = () => {
         />
         <Card.Body>
           <Card.Title style={{ fontWeight: 600 }}>{member.name}</Card.Title>
-          <Card.Subtitle className="mb-3 " style={{ fontSize: "0.9rem" , color: "#A9A9A9"}}>
+          <Card.Subtitle className="mb-2" style={{ fontSize: "0.9rem", color: "#A9A9A9" }}>
             {member.program}
           </Card.Subtitle>
+          {member.currentDesignation && (
+            <div className="mb-2" style={{ fontSize: "0.85rem", color: "#ddd" }}>
+              <strong>Current:</strong> {member.currentDesignation}
+            </div>
+          )}
 
           {member.research && (
             <div className="mb-3">

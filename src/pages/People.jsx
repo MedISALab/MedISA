@@ -78,6 +78,11 @@ const People = () => {
         <Card.Body style={{ flex: 1 }}>
           <Card.Title style={{ fontSize: "1.1rem", fontWeight: 600 }}>{member.name}</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">{member.program}</Card.Subtitle>
+          {member.currentDesignation && (
+            <Card.Text className="mb-2">
+              <strong>Current Designation:</strong> {member.currentDesignation}
+            </Card.Text>
+          )}
           <Card.Text>
             <strong>Research:</strong> {member.research}
           </Card.Text>
