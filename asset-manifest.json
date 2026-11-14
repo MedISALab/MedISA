@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.28682cdf.css",
-    "main.js": "./static/js/main.b58739fe.js",
+    "main.js": "./static/js/main.3d7490e3.js",
     "static/js/453.73239b16.chunk.js": "./static/js/453.73239b16.chunk.js",
     "static/media/Avadhut Eknath Kabadi.png": "./static/media/Avadhut Eknath Kabadi.69dce48e96325853c85b.png",
     "static/media/highlight-img.png": "./static/media/highlight-img.491615534ff7ad7df336.png",
@@ -30,10 +30,10 @@
     "static/media/Keshava Chowdari Dabbara.jpeg": "./static/media/Keshava Chowdari Dabbara.5eea9a0717917d625cc6.jpeg",
     "static/media/Ali Asad Quasim.jpeg": "./static/media/Ali Asad Quasim.1687f667fc75d2f3fee1.jpeg",
     "static/media/Sweta Srivastava.png": "./static/media/Sweta Srivastava.b6f03527a5da02ad15cc.png",
-    "static/media/Juhi Chaudhary.jpeg": "./static/media/Juhi Chaudhary.ac0456d4344ee50d1f52.jpeg",
     "static/media/Prabhat Ranjan.jpeg": "./static/media/Prabhat Ranjan.6533561fc1293a532d07.jpeg",
     "static/media/Dinner_Apr_2026.jpg": "./static/media/Dinner_Apr_2026.f302748380171d7c6bb7.jpg",
     "static/media/Arjun Baidya.jpeg": "./static/media/Arjun Baidya.ad61bc928df0f20c8a5a.jpeg",
+    "static/media/Juhi Chaudhary.jpeg": "./static/media/Juhi Chaudhary.fce3b210a1252486e437.jpeg",
     "static/media/Chandra Manglani.jpeg": "./static/media/Chandra Manglani.2c1559e9b1ea23b711e3.jpeg",
     "static/media/Mangaldeep Banerjee.jpeg": "./static/media/Mangaldeep Banerjee.ccb6ca46d0ca664a86b9.jpeg",
     "static/media/Devi Prasad Maharathy.jpeg": "./static/media/Devi Prasad Maharathy.3ce82c6881631b3f30d5.jpeg",
@@ -45,11 +45,11 @@
     "static/media/Nivedita Gupta.jpeg": "./static/media/Nivedita Gupta.a9f31889d239c9c91645.jpeg",
     "static/media/Advaith Moholkar.jpeg": "./static/media/Advaith Moholkar.6a60d3bf07c139883160.jpeg",
     "static/media/Vinamra Gupta.jpeg": "./static/media/Vinamra Gupta.0bf20b69c6782ada6e11.jpeg",
-    "static/media/Obed Jamir.jpeg": "./static/media/Obed Jamir.7ad1340bc12f0fc961d1.jpeg",
     "static/media/Jatin Pankaj Pahuja.jpg": "./static/media/Jatin Pankaj Pahuja.ed98f8d88eb5f8dce9bc.jpg",
     "static/media/Priya Barange.jpeg": "./static/media/Priya Barange.6070746423c159e084ac.jpeg",
     "static/media/Shoiab Shafi.jpeg": "./static/media/Shoiab Shafi.57d79f58331b25fa4282.jpeg",
     "static/media/Vidushi Mittal.jpg": "./static/media/Vidushi Mittal.c1926edb1155a4bc0aad.jpg",
+    "static/media/Obed Jamir.jpeg": "./static/media/Obed Jamir.fecf7d9957568575ab78.jpeg",
     "static/media/CentraNo2-Bold.ttf": "./static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "./static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/Shrusti Jain.jpeg": "./static/media/Shrusti Jain.6736547568201826d9a8.jpeg",
@@ -71,11 +71,11 @@
     "static/media/nav-icon1.svg": "./static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.28682cdf.css.map": "./static/css/main.28682cdf.css.map",
-    "main.b58739fe.js.map": "./static/js/main.b58739fe.js.map",
+    "main.3d7490e3.js.map": "./static/js/main.3d7490e3.js.map",
     "453.73239b16.chunk.js.map": "./static/js/453.73239b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28682cdf.css",
-    "static/js/main.b58739fe.js"
+    "static/js/main.3d7490e3.js"
   ]
 }
